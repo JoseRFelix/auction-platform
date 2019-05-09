@@ -1,6 +1,7 @@
 import React from "react";
 import "./Listing.css";
 import Divider from "../Divider/Divider";
+import CountDown from "../CountDown/CountDown";
 
 const Listing = () => {
   return (
@@ -15,6 +16,7 @@ const Listing = () => {
         <h4 className="image-container__details ">ver detalhes</h4>
       </div>
       <div className="status">
+        <CountDown initialTimerTime={100000} />
         <Divider />
       </div>
     </div>
