@@ -39,3 +39,99 @@
 .image-container__details:hover {
   background-color: var(--details-hover-bg-color);
 }
+
+.bid-details {
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.bid-details__button {
+  margin-top: 2rem;
+  padding: 1rem;
+
+  background-color: var(--primary-color);
+  color: #fff;
+
+  border: none;
+  border-radius: 5px;
+
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: inherit;
+  font-size: 1.5rem;
+
+  cursor: pointer;
+
+  outline: none;
+
+  transition: 0.2s;
+}
+
+.bid-details__button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0.5rem 0;
+
+  border-bottom: solid var(--gray) 2px;
+}
+
+.status > *:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.status__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 13rem;
+}
+
+.status__container h6 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.status__divider {
+  height: 4rem;
+}
+
+.status__bid {
+  color: var(--primary-color);
+}
+
+.car-details {
+  padding: 1.5rem 0;
+}
+
+.car-details > h4 {
+  text-transform: uppercase;
+  color: var(--dark-gray);
+
+  width: 32rem;
+
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.car-condition > *:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.car-condition > h4 {
+  width: 12rem;
+  padding: 0 2rem;
+  font-weight: 400;
+  text-align: center;
+}

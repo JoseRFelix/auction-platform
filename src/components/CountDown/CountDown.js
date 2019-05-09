@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
+import "./Countdown.css";
 import PropTypes from "prop-types";
 
-const CountDown = ({ initialTimerTime }) => {
+const Countdown = ({ initialTimerTime, className }) => {
   const [timerTime, setTimerTime] = useState(initialTimerTime);
 
   useEffect(() => {
@@ -20,14 +21,15 @@ const CountDown = ({ initialTimerTime }) => {
   const hours = ("0" + Math.floor((timerTime / 3600000) % 60)).slice(-2);
 
   return (
-    <div>
-      {hours} : {minutes} : {seconds}
-    </div>
+    <h1 className={"countdown " + className}>
+      {hours}:{minutes}:{seconds}
+    </h1>
   );
 };
 
-CountDown.propTypes = {
-  initialTimerTime: PropTypes.number.isRequired
+Countdown.propTypes = {
+  initialTimerTime: PropTypes.number.isRequired,
+  className: PropTypes.string
 };
 
-export default CountDown;
+export default Countdown;
