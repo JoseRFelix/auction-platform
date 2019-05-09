@@ -1,0 +1,41 @@
+.listing {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  background-color: #fff;
+
+  border-radius: 5px;
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container > img {
+  background-size: cover;
+  object-fit: cover;
+
+  width: 40rem;
+  height: 25rem;
+}
+
+.image-container__details {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  color: white;
+  width: 100%;
+  text-align: center;
+  transition: 0.2s;
+
+  cursor: pointer;
+
+  background-color: var(--details-bg-color);
+}
+
+.image-container__details:hover {
+  background-color: var(--details-hover-bg-color);
+}

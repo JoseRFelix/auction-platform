@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../assets/logo.png";
 import "./TopBar.css";
+import Divider from "../Divider/Divider";
 import { ReactComponent as PhoneIcon } from "../../assets/phone.svg";
 import { ReactComponent as UserIcon } from "../../assets/user.svg";
 import { ReactComponent as CaretIcon } from "../../assets/caret.svg";
@@ -10,7 +11,7 @@ const TopBar = () => {
     <nav className="top-bar">
       <div className="top-bar__image-container">
         <img className="top-bar__image" src={logo} alt="Logo" />
-        <div className="top-bar__divider">&#8203;</div>
+        <Divider className="top-bar__divider" />
         <h3 className="top-bar__phone-number">
           <PhoneIcon /> (11) 3569 - 3465
         </h3>

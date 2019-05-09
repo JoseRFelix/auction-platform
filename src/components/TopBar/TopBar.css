@@ -21,9 +21,7 @@
 }
 
 .top-bar__divider {
-  width: 2px;
   height: 5rem;
-  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .top-bar__phone-number {

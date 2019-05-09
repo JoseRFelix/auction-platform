@@ -15,8 +15,8 @@
   --bg-color: #ebebeb;
   --navbar-bg-color: #fff;
   --timer-color: #ff6d4a;
-  --bid-color: #3eb871;
   --details-bg-color: rgba(0, 0, 0, 0.4);
+  --details-hover-bg-color: rgba(0, 0, 0, 0.7);
 
   --dark-gray: #323232;
 }

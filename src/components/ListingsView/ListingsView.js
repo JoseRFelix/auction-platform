@@ -1,7 +1,20 @@
 import React from "react";
+import "./ListingsView.css";
+import Listing from "../Listing/Listing";
 
 const ListingsView = () => {
-  return <div>ListingsView</div>;
+  return (
+    <main className="listings-view">
+      <Listing />
+      <Listing />
+      <Listing />
+      <Listing />
+      <Listing />
+      <Listing />
+      <Listing />
+      <Listing />
+    </main>
+  );
 };
 
 export default ListingsView;
