@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../assets/logo.png";
-import "./TopBar.css";
+import "./TopBar.scss";
 import Divider from "../Divider/Divider";
 import { ReactComponent as PhoneIcon } from "../../assets/phone.svg";
 import { ReactComponent as UserIcon } from "../../assets/user.svg";

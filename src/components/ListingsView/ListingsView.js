@@ -1,5 +1,5 @@
 import React from "react";
-import "./ListingsView.css";
+import "./ListingsView.scss";
 import Listing from "../Listing/Listing";
 
 const ListingsView = () => {

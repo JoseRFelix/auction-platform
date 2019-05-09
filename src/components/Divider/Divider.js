@@ -1,5 +1,5 @@
 import React from "react";
-import "./Divider.css";
+import "./Divider.scss";
 import PropTypes from "prop-types";
 
 const Divider = ({ className }) => {

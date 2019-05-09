@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Countdown.css";
+import "./Countdown.scss";
 import PropTypes from "prop-types";
 
 const Countdown = ({ initialTimerTime, className }) => {

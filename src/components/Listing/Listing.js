@@ -1,5 +1,5 @@
 import React from "react";
-import "./Listing.css";
+import "./Listing.scss";
 import Divider from "../Divider/Divider";
 import Countdown from "../Countdown/Countdown";
 

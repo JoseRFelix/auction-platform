@@ -4,8 +4,8 @@
   flex-wrap: wrap;
 
   padding: 4rem 5rem;
-}
 
-.listings-view > div {
-  margin: 0 3rem 2rem 0;
+  & > div {
+    margin: 0 3rem 2rem 0;
+  }
 }
