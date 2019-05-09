@@ -1,3 +1,62 @@
 .top-bar {
   display: flex;
+  justify-content: space-between;
+  background-color: var(--navbar-bg-color);
+
+  padding: 0 10rem;
+}
+
+.top-bar__image-container {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.top-bar__image-container > *:not(:last-child) {
+  margin-right: 7rem;
+}
+
+.top-bar__image {
+  width: 20rem;
+}
+
+.top-bar__divider {
+  width: 2px;
+  height: 5rem;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.top-bar__phone-number {
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.top-bar__phone-number > svg {
+  margin-right: 1rem;
+}
+
+.user-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  cursor: pointer;
+
+  padding: 0 6rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.user-box__user-icon {
+  margin-bottom: 0.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.user-box__caret {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
 }
