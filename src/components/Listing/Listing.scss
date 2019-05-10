@@ -12,13 +12,23 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  background-color: lightgray;
 
-  & > img {
+  img {
     background-size: cover;
     object-fit: cover;
 
     width: 40rem;
     height: 25rem;
+  }
+
+  .img-loading {
+    opacity: 0;
+  }
+
+  .img-loaded {
+    animation: FadeIn cubic-bezier(0.23, 1, 0.32, 1) 1;
+    animation-duration: 0.7s;
   }
 
   &__details {
@@ -37,6 +47,16 @@
     &:hover {
       background-color: var(--details-hover-bg-color);
     }
+  }
+}
+
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
 
@@ -115,7 +135,7 @@
 .car-details {
   padding: 1.5rem 0;
 
-  & h4 {
+  h4 {
     text-transform: uppercase;
     color: var(--dark-gray);
 
