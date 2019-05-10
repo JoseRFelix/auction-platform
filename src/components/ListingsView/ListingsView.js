@@ -25,7 +25,7 @@ const ListingsView = () => {
           <Listing key={listingInformation.id} details={listingInformation} />
         ))
       ) : (
-        <h1>Failed fetching listings</h1>
+        <h1>Loading...</h1>
       )}
     </main>
   );
