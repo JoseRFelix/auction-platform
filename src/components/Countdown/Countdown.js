@@ -21,7 +21,10 @@ const Countdown = ({ initialTimerTime, className }) => {
   const hours = ("0" + Math.floor((timerTime / 3600000) % 60)).slice(-2);
 
   return (
-    <h1 className={"countdown " + className}>
+    <h1
+      data-testid="timerValue"
+      className={`countdown ${className ? className : ""}`}
+    >
       {hours}:{minutes}:{seconds}
     </h1>
   );

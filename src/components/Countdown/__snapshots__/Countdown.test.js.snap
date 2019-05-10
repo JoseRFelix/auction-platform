@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Countdown renders without crashing 1`] = `
+<DocumentFragment>
+  <h1
+    class="countdown "
+    data-testid="timerValue"
+  >
+    00:00:01
+  </h1>
+</DocumentFragment>
+`;
