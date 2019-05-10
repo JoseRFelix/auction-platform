@@ -104,6 +104,16 @@ $bp-large: 68.75em; // 1100px
       transform: translateY(-2px);
       box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.2);
     }
+
+    &--done {
+      background-color: gray;
+      cursor: default;
+
+      &:hover {
+        transform: none;
+        box-shadow: none;
+      }
+    }
   }
 }
 

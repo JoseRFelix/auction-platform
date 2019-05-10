@@ -5,9 +5,11 @@ import Countdown from "../Countdown/Countdown";
 import ImageLoader from "./ImageLoader";
 import LazyLoad from "react-lazy-load";
 import PropTypes from "prop-types";
+import classnames from "classnames";
 
 const Listing = ({ details }) => {
   const [bids, setBids] = useState(details.bids);
+  const [isDone, setIsDone] = useState(false);
 
   const highestBid = bids.length
     ? bids[bids.length >= 0 ? bids.length - 1 : 0].amount
@@ -52,7 +54,10 @@ const Listing = ({ details }) => {
         <div className="section status">
           <div className="status__container">
             <h6>Tempo Restante</h6>
-            <Countdown initialTimerTime={details.remainingTime} />{" "}
+            <Countdown
+              done={setIsDone}
+              initialTimerTime={details.remainingTime}
+            />{" "}
           </div>
           <Divider className="status__divider" />
           <div className="status__container">
@@ -72,7 +77,13 @@ const Listing = ({ details }) => {
           <Divider className="status__divider" />
           <h4>{details.km.toLocaleString("pt-BR")} KM</h4>
         </div>
-        <button onClick={addBid} className="bid-details__button">
+        <button
+          onClick={isDone ? null : addBid}
+          className={classnames(
+            "bid-details__button",
+            isDone ? "bid-details__button--done" : ""
+          )}
+        >
           Fazer oferta
         </button>
       </div>
