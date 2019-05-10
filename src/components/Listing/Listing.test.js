@@ -37,6 +37,12 @@ describe("Listing", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
+  it("displays the highest bid", () => {
+    const { getByTestId } = render(<Listing details={mockDetails} />);
+
+    expect(getByTestId("currentBid").textContent).toBe("R$ 40,250");
+  });
+
   it("increases bid by R$ 250", () => {
     const { getByText, getByTestId } = render(
       <Listing details={mockDetails} />
