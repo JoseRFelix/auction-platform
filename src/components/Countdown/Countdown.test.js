@@ -1,12 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import {
-  render,
-  fireEvent,
-  getByTestId,
-  rerender,
-  cleanup
-} from "react-testing-library";
+import { render, getByTestId, cleanup } from "react-testing-library";
 import { act } from "react-dom/test-utils";
 
 import Countdown from "./Countdown";

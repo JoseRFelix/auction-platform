@@ -3,7 +3,7 @@ import "./Divider.scss";
 import PropTypes from "prop-types";
 
 const Divider = ({ className }) => {
-  return <div className={"divider " + className}>&#8203;</div>;
+  return <div className={`divider ${className ? className : ""}`}>&#8203;</div>;
 };
 
 Divider.propTypes = {

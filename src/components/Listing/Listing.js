@@ -57,7 +57,7 @@ const Listing = ({ details }) => {
           <Divider className="status__divider" />
           <div className="status__container">
             <h6>Ultima Oferta</h6>
-            <h1 className="status__bid">
+            <h1 className="status__bid" data-testid="currentBid">
               R$ {highestBid.toLocaleString("pt-BR")}
             </h1>
           </div>

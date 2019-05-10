@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Listing renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="listing"
+  >
+    <div
+      class="image-container"
+    >
+      <div
+        class="LazyLoad"
+        style="height: 250px; width: 400px;"
+      />
+      <h4
+        class="image-container__details "
+      >
+        ver detalhes
+      </h4>
+    </div>
+    <div
+      class="bid-details"
+    >
+      <div
+        class="section status"
+      >
+        <div
+          class="status__container"
+        >
+          <h6>
+            Tempo Restante
+          </h6>
+          <h1
+            class="countdown "
+            data-testid="timerValue"
+          >
+            00:24:16
+          </h1>
+           
+        </div>
+        <div
+          class="divider status__divider"
+        >
+          ​
+        </div>
+        <div
+          class="status__container"
+        >
+          <h6>
+            Ultima Oferta
+          </h6>
+          <h1
+            class="status__bid"
+            data-testid="currentBid"
+          >
+            R$ 40,250
+          </h1>
+        </div>
+      </div>
+      <div
+        class="section car-details"
+      >
+        <h4>
+          HYUNDAI TUCSON 2.0 MPFI GLS 16V 143CV 2WD FLEX 4P AUTOMATICO 2015
+        </h4>
+      </div>
+      <div
+        class="section car-condition"
+      >
+        <h4>
+          2015
+        </h4>
+        <div
+          class="divider status__divider"
+        >
+          ​
+        </div>
+        <h4>
+          46,460 KM
+        </h4>
+      </div>
+      <button
+        class="bid-details__button"
+      >
+        Fazer oferta
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
