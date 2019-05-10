@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageLoader renders without crashing 1`] = `
+<DocumentFragment>
+  <img
+    alt="image"
+    class="image img-loading"
+    src="https://via.placeholder.com/150"
+  />
+</DocumentFragment>
+`;
