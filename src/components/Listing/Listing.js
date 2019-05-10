@@ -43,7 +43,7 @@ const Listing = ({ details }) => {
   return (
     <div className="listing">
       <div className="image-container">
-        <LazyLoad width={400} height={250} offset={0}>
+        <LazyLoad className="image-container__lazy-load" offset={0}>
           <ImageLoader src={details.imageUrl} alt="Car" />
         </LazyLoad>
         <h4 className="image-container__details ">ver detalhes</h4>

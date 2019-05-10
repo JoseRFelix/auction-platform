@@ -1,3 +1,5 @@
+$bp-smallest: 31.25em; // 500px
+
 .listings-view {
   display: flex;
   justify-content: center;
@@ -5,7 +7,15 @@
 
   padding: 4rem 5rem;
 
+  @media only screen and (max-width: $bp-smallest) {
+    padding: 2rem 1rem;
+  }
+
   & > div {
     margin: 0 3rem 2rem 0;
+
+    @media only screen and (max-width: $bp-smallest) {
+      margin: 0 0 2rem 0;
+    }
   }
 }
