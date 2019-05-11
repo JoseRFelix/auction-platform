@@ -3,7 +3,7 @@
 exports[`Countdown renders without crashing 1`] = `
 <DocumentFragment>
   <h1
-    class="countdown "
+    class="countdown"
     data-testid="timerValue"
   >
     00:00:01

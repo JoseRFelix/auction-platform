@@ -18,7 +18,7 @@ const Countdown = ({ initialTimerTime, className, done }) => {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [timerTime]);
+  }, [timerTime, done]);
 
   const seconds = ("0" + (Math.floor((timerTime / 1000) % 60) % 60)).slice(-2);
   const minutes = ("0" + Math.floor((timerTime / 60000) % 60)).slice(-2);

@@ -9,8 +9,7 @@ exports[`Listing renders without crashing 1`] = `
       class="image-container"
     >
       <div
-        class="LazyLoad"
-        style="height: 250px; width: 400px;"
+        class="LazyLoad image-container__lazy-load"
       />
       <h4
         class="image-container__details "
@@ -31,7 +30,7 @@ exports[`Listing renders without crashing 1`] = `
             Tempo Restante
           </h6>
           <h1
-            class="countdown "
+            class="countdown"
             data-testid="timerValue"
           >
             00:24:16
